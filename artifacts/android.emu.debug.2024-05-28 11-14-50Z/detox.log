@@ -1,0 +1,1142 @@
+13:14:50.840 detox[14103] [90mB[39m node_modules/.bin/detox test --configuration android.emu.debug --record-logs all
+  data: {
+    "id": "f7fce3f0-2159-8aac-a465-fd1984a831c6",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+          "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug",
+          "reversePorts": [
+            8081
+          ]
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2024-05-28 11-14-50Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_4_XL_API_34"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "detached": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 120000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "jest",
+          "_": [],
+          "config": "e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-14103",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+13:14:50.869 detox[14103] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-14103
+13:14:50.871 detox[14103] [90mi[39m starting server on  /tmp/detox.primary-14103 
+13:14:50.871 detox[14103] [90mi[39m starting TLS server false
+13:14:50.871 detox[14103] [90mi[39m starting server as Unix || Windows Socket
+13:14:50.875 detox[14103] [90mi[39m Detox server listening on localhost:60607...
+13:14:50.881 detox[14103] [90mi[39m Serialized the session state at: /private/var/folders/bb/102z646n3nd8dhsmb5m87gvm0000gp/T/f7fce3f0-2159-8aac-a465-fd1984a831c6.detox.json
+13:14:50.882 detox[14103] [90mB[39m jest --config e2e/jest.config.js
+13:14:53.076 detox[14106] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+13:14:53.077 detox[14106] [90mi[39m requested connection to  primary-14103 /tmp/detox.primary-14103
+13:14:53.077 detox[14106] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-14103
+13:14:53.078 detox[14103] [90mi[39m ## socket connection to server detected ##
+13:14:53.079 detox[14106] [90mi[39m retrying reset
+13:14:53.080 detox[14106] [90mi[39m dispatching event to  primary-14103 /tmp/detox.primary-14103  :  registerContext , { id: 'secondary-14106' }
+13:14:53.082 detox[14103] [90mi[39m received event of :  registerContext { id: 'secondary-14106' }
+13:14:53.083 detox[14103] [90mi[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+13:14:53.083 detox[14106] [90mi[39m ## received events ##
+13:14:53.084 detox[14106] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+13:14:53.330 detox[14106] [90mB[39m e2e/starter.test.js
+13:14:53.367 detox[14106] [90mB[39m set up environment
+13:14:53.369 detox[14106] [90mi[39m dispatching event to  primary-14103 /tmp/detox.primary-14103  :  registerWorker , { workerId: 'w1' }
+13:14:53.370 detox[14103] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+13:14:53.370 detox[14103] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+13:14:53.370 detox[14103] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-14103  :   sessionStateUpdate { workersCount: 1 }
+13:14:53.371 detox[14106] [90mi[39m ## received events ##
+13:14:53.371 detox[14106] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+13:14:53.371 detox[14106] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+13:14:53.644 detox[14103] [90mB[39m connection :60607<->:60609
+13:14:53.645 detox[14106] [90mi[39m opened web socket to: ws://localhost:60607
+13:14:53.662 detox[14106] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"377935a7-09af-c61f-06cb-6f16a549a7c5","role":"tester"},"messageId":0}
+13:14:53.663 detox[14103] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"377935a7-09af-c61f-06cb-6f16a549a7c5","role":"tester"},"messageId":0}
+13:14:53.664 detox[14103] [90mi[39m created session 377935a7-09af-c61f-06cb-6f16a549a7c5
+13:14:53.664 detox[14103] [90mi[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+13:14:53.665 detox[14103] [90mi[39m tester joined session 377935a7-09af-c61f-06cb-6f16a549a7c5
+13:14:53.665 detox[14106] [90mi[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+13:14:53.774 detox[14103] [90mi[39m received event of :  allocateDevice {
+  deviceConfig: {
+    type: 'android.emulator',
+    device: { avdName: 'Pixel_4_XL_API_34' }
+  }
+}
+13:14:53.774 detox[14106] [90mi[39m dispatching event to  primary-14103 /tmp/detox.primary-14103  :  allocateDevice , {
+  deviceConfig: {
+    type: 'android.emulator',
+    device: { avdName: 'Pixel_4_XL_API_34' }
+  }
+}
+13:14:53.830 detox[14103] [90mB[39m init
+  args: ()
+13:14:53.834 detox[14103] [90mE[39m init
+13:14:53.834 detox[14103] [90mB[39m allocate
+  data: {
+    "type": "android.emulator",
+    "device": {
+      "avdName": "Pixel_4_XL_API_34"
+    }
+  }
+13:14:53.834 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/emulator/emulator" -list-avds --verbose
+13:14:53.927 detox[14103] [90mi[39m INFO    | Storing crashdata in: /tmp/android-llienard/emu-crash-34.1.19.db, detection is enabled for process: 14133
+Pixel_4_XL_API_34
+Pixel_8_Pro_API_34
+
+13:14:53.927 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/emulator/emulator" -version 
+13:14:54.275 detox[14103] [90mi[39m INFO    | Storing crashdata in: /tmp/android-llienard/emu-crash-34.1.19.db, detection is enabled for process: 14136
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+Android emulator version 34.1.19.0 (build_id 11525734) (CL:N/A)
+Copyright (C) 2006-2017 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+13:14:54.276 detox[14103] [90mi[39m Detected emulator binary version { major: 34, minor: 1, patch: 19, toString: [Function: toString] }
+13:14:54.277 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb"  devices
+13:14:54.315 detox[14103] [90mi[39m List of devices attached
+emulator-17774	device
+
+
+13:14:54.317 detox[14103] [90mi[39m port: 17774, host: localhost
+13:14:54.330 detox[14103] [90mi[39m Found a matching & free device emulator-17774
+13:14:54.331 detox[14103] [90mi[39m settled on emulator-17774 (Pixel_4_XL_API_34)
+  data: {
+    "id": "emulator-17774",
+    "adbName": "emulator-17774",
+    "name": "emulator-17774 (Pixel_4_XL_API_34)"
+  }
+13:14:54.331 detox[14103] [90mE[39m allocate
+13:14:54.331 detox[14103] [90mB[39m post-allocate: emulator-17774
+  data: {
+    "id": "emulator-17774",
+    "adbName": "emulator-17774",
+    "name": "emulator-17774 (Pixel_4_XL_API_34)"
+  }
+13:14:54.331 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "getprop dev.bootcomplete"
+13:14:54.404 detox[14103] [90mi[39m 1
+
+13:14:54.404 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "getprop ro.build.version.sdk"
+13:14:54.481 detox[14103] [90mi[39m 34
+
+13:14:54.481 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "settings put global animator_duration_scale 0"
+13:14:54.583 detox[14103] [90mi[39m 
+13:14:54.583 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "settings put global window_animation_scale 0"
+13:14:54.714 detox[14103] [90mi[39m 
+13:14:54.714 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "settings put global transition_animation_scale 0"
+13:14:54.829 detox[14103] [90mi[39m 
+13:14:54.830 detox[14103] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+13:14:54.929 detox[14103] [90mi[39m   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+  mWakeLockSummary=0x0
+  mUserInteractionBackoffMillis=60000
+
+13:14:54.929 detox[14103] [90mE[39m post-allocate: emulator-17774
+13:14:54.929 detox[14103] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-17774',
+    adbName: 'emulator-17774',
+    name: 'emulator-17774 (Pixel_4_XL_API_34)'
+  }
+}
+13:14:54.929 detox[14106] [90mi[39m ## received events ##
+13:14:54.929 detox[14106] [90mi[39m detected event allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-17774',
+    adbName: 'emulator-17774',
+    name: 'emulator-17774 (Pixel_4_XL_API_34)'
+  }
+}
+13:14:54.985 detox[14106] [90mB[39m onBootDevice
+  args: ({"deviceId":"emulator-17774"})
+13:14:54.985 detox[14106] [90mE[39m onBootDevice
+13:14:54.986 detox[14106] [90mB[39m installUtilBinaries
+  args: ()
+13:14:54.986 detox[14106] [90mE[39m installUtilBinaries
+13:14:54.986 detox[14106] [90mB[39m selectApp
+  args: ("default")
+13:14:54.988 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/build-tools/34.0.0/aapt" dump badging "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/debug/app-debug.apk"
+13:14:55.070 detox[14106] [90mi[39m package: name='com.awesomeproject' versionCode='1' versionName='1.0' platformBuildVersionName='14' platformBuildVersionCode='34' compileSdkVersion='34' compileSdkVersionCodename='14'
+sdkVersion:'23'
+targetSdkVersion:'34'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='com.awesomeproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'AwesomeProject'
+application-label-af:'AwesomeProject'
+application-label-am:'AwesomeProject'
+application-label-ar:'AwesomeProject'
+application-label-as:'AwesomeProject'
+application-label-az:'AwesomeProject'
+application-label-be:'AwesomeProject'
+application-label-bg:'AwesomeProject'
+application-label-bn:'AwesomeProject'
+application-label-bs:'AwesomeProject'
+application-label-ca:'AwesomeProject'
+application-label-cs:'AwesomeProject'
+application-label-da:'AwesomeProject'
+application-label-de:'AwesomeProject'
+application-label-el:'AwesomeProject'
+application-label-en-AU:'AwesomeProject'
+application-label-en-CA:'AwesomeProject'
+application-label-en-GB:'AwesomeProject'
+application-label-en-IN:'AwesomeProject'
+application-label-en-XC:'AwesomeProject'
+application-label-es:'AwesomeProject'
+application-label-es-ES:'AwesomeProject'
+application-label-es-US:'AwesomeProject'
+application-label-et:'AwesomeProject'
+application-label-eu:'AwesomeProject'
+application-label-fa:'AwesomeProject'
+application-label-fi:'AwesomeProject'
+application-label-fr:'AwesomeProject'
+application-label-fr-CA:'AwesomeProject'
+application-label-gl:'AwesomeProject'
+application-label-gu:'AwesomeProject'
+application-label-hi:'AwesomeProject'
+application-label-hr:'AwesomeProject'
+application-label-hu:'AwesomeProject'
+application-label-hy:'AwesomeProject'
+application-label-in:'AwesomeProject'
+application-label-is:'AwesomeProject'
+application-label-it:'AwesomeProject'
+application-label-iw:'AwesomeProject'
+application-label-ja:'AwesomeProject'
+application-label-ka:'AwesomeProject'
+application-label-kk:'AwesomeProject'
+application-label-km:'AwesomeProject'
+application-label-kn:'AwesomeProject'
+application-label-ko:'AwesomeProject'
+application-label-ky:'AwesomeProject'
+application-label-lo:'AwesomeProject'
+application-label-lt:'AwesomeProject'
+application-label-lv:'AwesomeProject'
+application-label-mk:'AwesomeProject'
+application-label-ml:'AwesomeProject'
+application-label-mn:'AwesomeProject'
+application-label-mr:'AwesomeProject'
+application-label-ms:'AwesomeProject'
+application-label-my:'AwesomeProject'
+application-label-nb:'AwesomeProject'
+application-label-ne:'AwesomeProject'
+application-label-nl:'AwesomeProject'
+application-label-or:'AwesomeProject'
+application-label-pa:'AwesomeProject'
+application-label-pl:'AwesomeProject'
+application-label-pt:'AwesomeProject'
+application-label-pt-BR:'AwesomeProject'
+application-label-pt-PT:'AwesomeProject'
+application-label-ro:'AwesomeProject'
+application-label-ru:'AwesomeProject'
+application-label-si:'AwesomeProject'
+application-label-sk:'AwesomeProject'
+application-label-sl:'AwesomeProject'
+application-label-sq:'AwesomeProject'
+application-label-sr:'AwesomeProject'
+application-label-sr-Latn:'AwesomeProject'
+application-label-sv:'AwesomeProject'
+application-label-sw:'AwesomeProject'
+application-label-ta:'AwesomeProject'
+application-label-te:'AwesomeProject'
+application-label-th:'AwesomeProject'
+application-label-tl:'AwesomeProject'
+application-label-tr:'AwesomeProject'
+application-label-uk:'AwesomeProject'
+application-label-ur:'AwesomeProject'
+application-label-uz:'AwesomeProject'
+application-label-vi:'AwesomeProject'
+application-label-zh-CN:'AwesomeProject'
+application-label-zh-HK:'AwesomeProject'
+application-label-zh-TW:'AwesomeProject'
+application-label-zu:'AwesomeProject'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application: label='AwesomeProject' icon='res/mipmap-mdpi-v4/ic_launcher.png'
+application-debuggable
+launchable-activity: name='com.awesomeproject.MainActivity'  label='AwesomeProject' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+main
+other-activities
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-ES' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '160' '240' '320' '480' '640'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+13:14:55.070 detox[14106] [90mE[39m selectApp
+13:14:55.070 detox[14106] [90mB[39m uninstallApp
+  args: ()
+13:14:55.070 detox[14106] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:55.071 detox[14106] [90mE[39m onBeforeUninstallApp
+13:14:55.071 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "pm list packages com.awesomeproject"
+13:14:55.180 detox[14106] [90mi[39m package:com.awesomeproject
+package:com.awesomeproject.test
+
+13:14:55.180 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 uninstall com.awesomeproject
+13:14:55.426 detox[14106] [90mi[39m Success
+
+13:14:55.427 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "pm list packages com.awesomeproject.test"
+13:14:55.626 detox[14106] [90mi[39m package:com.awesomeproject.test
+
+13:14:55.626 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 uninstall com.awesomeproject.test
+13:14:55.833 detox[14106] [90mi[39m Success
+
+13:14:55.833 detox[14106] [90mE[39m uninstallApp
+13:14:55.833 detox[14106] [90mB[39m selectApp
+  args: ("default")
+13:14:55.834 detox[14106] [90mB[39m terminateApp
+  args: ()
+13:14:55.834 detox[14106] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:55.835 detox[14106] [90mE[39m onBeforeTerminateApp
+13:14:55.835 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "am force-stop com.awesomeproject"
+13:14:55.989 detox[14106] [90mi[39m 
+13:14:55.989 detox[14106] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:55.989 detox[14106] [90mE[39m onTerminateApp
+13:14:55.989 detox[14106] [90mE[39m terminateApp
+13:14:55.989 detox[14106] [90mE[39m selectApp
+13:14:55.990 detox[14106] [90mB[39m installApp
+  args: ()
+13:14:55.990 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/debug/app-debug.apk" AndroidManifest.xml
+13:14:56.025 detox[14106] [90mi[39m String pool of 57 unique UTF-16 non-sorted strings, 57 entries and 0 styles using 2588 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: protectionLevel
+String #5: debuggable
+String #6: exported
+String #7: authorities
+String #8: launchMode
+String #9: configChanges
+String #10: value
+String #11: minSdkVersion
+String #12: versionCode
+String #13: versionName
+String #14: windowSoftInputMode
+String #15: targetSdkVersion
+String #16: allowBackup
+String #17: extractNativeLibs
+String #18: usesCleartextTraffic
+String #19: roundIcon
+String #20: compileSdkVersion
+String #21: compileSdkVersionCodename
+String #22: appComponentFactory
+String #23: 1.0
+String #24: 14
+String #25: action
+String #26: activity
+String #27: android
+String #28: android.intent.action.MAIN
+String #29: android.intent.category.LAUNCHER
+String #30: android.permission.INTERNET
+String #31: android.permission.SYSTEM_ALERT_WINDOW
+String #32: androidx.core.app.CoreComponentFactory
+String #33: androidx.emoji2.text.EmojiCompatInitializer
+String #34: androidx.lifecycle.ProcessLifecycleInitializer
+String #35: androidx.startup
+String #36: androidx.startup.InitializationProvider
+String #37: application
+String #38: category
+String #39: com.awesomeproject
+String #40: com.awesomeproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+String #41: com.awesomeproject.MainActivity
+String #42: com.awesomeproject.MainApplication
+String #43: com.awesomeproject.androidx-startup
+String #44: com.facebook.react.devsupport.DevSettingsActivity
+String #45: com.facebook.soloader.enabled
+String #46: http://schemas.android.com/apk/res/android
+String #47: intent-filter
+String #48: manifest
+String #49: meta-data
+String #50: package
+String #51: permission
+String #52: platformBuildVersionCode
+String #53: platformBuildVersionName
+String #54: provider
+String #55: uses-permission
+String #56: uses-sdk
+
+13:14:56.026 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/build-tools/34.0.0/aapt" dump xmlstrings "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" AndroidManifest.xml
+13:14:56.065 detox[14106] [90mi[39m String pool of 43 unique UTF-16 non-sorted strings, 43 entries and 0 styles using 2132 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: priority
+String #6: targetPackage
+String #7: handleProfiling
+String #8: functionalTest
+String #9: minSdkVersion
+String #10: targetSdkVersion
+String #11: extractNativeLibs
+String #12: compileSdkVersion
+String #13: compileSdkVersionCodename
+String #14: 14
+String #15: Tests for com.awesomeproject
+String #16: activity
+String #17: android
+String #18: android.intent.category.LAUNCHER
+String #19: android.permission.REORDER_TASKS
+String #20: android.test.runner
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #23: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #24: androidx.test.orchestrator
+String #25: androidx.test.runner.AndroidJUnitRunner
+String #26: androidx.test.services
+String #27: application
+String #28: category
+String #29: com.awesomeproject
+String #30: com.awesomeproject.test
+String #31: com.google.android.apps.common.testing.services
+String #32: http://schemas.android.com/apk/res/android
+String #33: instrumentation
+String #34: intent-filter
+String #35: manifest
+String #36: package
+String #37: platformBuildVersionCode
+String #38: platformBuildVersionName
+String #39: queries
+String #40: uses-library
+String #41: uses-permission
+String #42: uses-sdk
+
+13:14:56.065 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "rm -fr /data/local/tmp/detox"
+13:14:56.183 detox[14106] [90mi[39m 
+13:14:56.183 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "mkdir -p /data/local/tmp/detox"
+13:14:56.259 detox[14106] [90mi[39m 
+13:14:56.259 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 push "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/debug/app-debug.apk" "/data/local/tmp/detox/Application.apk"
+13:14:56.844 detox[14106] [90mi[39m /Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/debug/app-debug.apk: 1 file pushed, 0 skipped. 352.8 MB/s (129586442 bytes in 0.350s)
+
+13:14:56.844 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "getprop ro.build.version.sdk"
+13:14:56.983 detox[14106] [90mi[39m 34
+
+13:14:56.985 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+13:14:57.746 detox[14106] [90mi[39m Success
+
+13:14:57.747 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+13:14:57.747 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 push "/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+13:14:57.836 detox[14106] [90mi[39m /Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk: 1 file pushed, 0 skipped. 204.7 MB/s (5238676 bytes in 0.024s)
+
+13:14:57.837 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+13:14:58.113 detox[14106] [90mi[39m Success
+
+13:14:58.115 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+13:14:58.115 detox[14106] [90mB[39m reverseTcpPort
+  args: (8081)
+13:14:58.115 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 reverse tcp:8081 tcp:8081
+13:14:58.139 detox[14106] [90mi[39m 
+13:14:58.140 detox[14106] [90mE[39m reverseTcpPort
+13:14:58.140 detox[14106] [90mE[39m installApp
+13:14:58.140 detox[14106] [90mB[39m selectApp
+  args: ("default")
+13:14:58.140 detox[14106] [90mB[39m terminateApp
+  args: ()
+13:14:58.140 detox[14106] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:58.140 detox[14106] [90mE[39m onBeforeTerminateApp
+13:14:58.140 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "am force-stop com.awesomeproject"
+13:14:58.295 detox[14106] [90mi[39m 
+13:14:58.295 detox[14106] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:58.295 detox[14106] [90mE[39m onTerminateApp
+13:14:58.295 detox[14106] [90mE[39m terminateApp
+13:14:58.295 detox[14106] [90mE[39m selectApp
+13:14:58.296 detox[14106] [90mE[39m set up environment
+13:14:58.971 detox[14106] [90mi[39m starter.test.js is assigned to emulator-17774 (Pixel_4_XL_API_34)
+13:14:58.972 detox[14106] [90mB[39m run the tests
+13:14:58.972 detox[14106] [90mB[39m onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+13:14:58.973 detox[14106] [90mE[39m onRunDescribeStart
+13:14:58.973 detox[14106] [90mB[39m Example
+13:14:58.973 detox[14106] [90mB[39m onRunDescribeStart
+  args: ({"name":"Example"})
+13:14:58.974 detox[14106] [90mE[39m onRunDescribeStart
+13:14:58.974 detox[14106] [90mB[39m beforeAll
+13:14:58.977 detox[14106] [90mB[39m launchApp
+  args: ()
+13:14:58.977 detox[14106] [90mB[39m terminateApp
+  args: ("com.awesomeproject")
+13:14:58.977 detox[14106] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:58.978 detox[14106] [90mE[39m onBeforeTerminateApp
+13:14:58.978 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "am force-stop com.awesomeproject"
+13:14:59.136 detox[14106] [90mi[39m 
+13:14:59.136 detox[14106] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject"})
+13:14:59.137 detox[14106] [90mE[39m onTerminateApp
+13:14:59.137 detox[14106] [90mE[39m terminateApp
+13:14:59.137 detox[14106] [90mB[39m onBeforeLaunchApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject","launchArgs":{"detoxServer":"ws://localhost:60607","detoxSessionId":"377935a7-09af-c61f-06cb-6f16a549a7c5"}})
+13:14:59.138 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "date +\"%m-%d %T.000\""
+13:14:59.241 detox[14106] [90mi[39m 05-28 13:14:58.000
+
+13:14:59.242 detox[14106] [90mE[39m onBeforeLaunchApp
+13:14:59.242 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 reverse tcp:60607 tcp:60607
+13:14:59.284 detox[14106] [90mi[39m 60607
+
+13:14:59.285 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "pm list instrumentation"
+13:14:59.392 detox[14106] [90mi[39m instrumentation:com.awesomeproject.test/androidx.test.runner.AndroidJUnitRunner (target=com.awesomeproject)
+instrumentation:com.smartdrive.smartdrive.test/androidx.test.runner.AndroidJUnitRunner (target=com.smartdrive.smartdrive)
+
+13:14:59.410 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell am instrument -w -r -e detoxServer ws://localhost:60607 -e detoxSessionId 377935a7-09af-c61f-06cb-6f16a549a7c5 -e debug false com.awesomeproject.test/androidx.test.runner.AndroidJUnitRunner
+13:14:59.910 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "ps | grep \"com\.awesomeproject$\""
+13:15:01.618 detox[14106] [90mi[39m u0_a438       3372   346   13815984 141836 0                   0 S com.awesomeproject
+
+13:15:01.618 detox[14106] [90mB[39m onLaunchApp
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject","launchArgs":{"detoxServer":"ws://localhost:60607","detoxSessionId":"377935a7-09af-c61f-06cb-6f16a549a7c5"},"pid":3372})
+13:15:01.619 detox[14106] [90mi[39m starting ADBLogcatRecording
+13:15:01.620 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell "logcat -T \"05-28 13:14:58.000\" --pid=3372 -f /sdcard/131453762_0.log"
+13:15:01.620 detox[14106] [90mE[39m onLaunchApp
+13:15:01.921 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell du /sdcard/131453762_0.log
+13:15:02.003 detox[14106] [90mi[39m 4	/sdcard/131453762_0.log
+
+13:15:03.448 detox[14106] [90mi[39m INSTRUMENTATION_STATUS: class=com.awesomeproject.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.awesomeproject.DetoxTest:
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+13:15:03.549 detox[14103] [90mB[39m connection :60607<->:60702
+13:15:03.555 detox[14103] [90mi[39m get
+  data: {"messageId":0,"type":"login","params":{"role":"app","sessionId":"377935a7-09af-c61f-06cb-6f16a549a7c5"}}
+13:15:03.555 detox[14103] [90mi[39m send
+  data: {
+    "messageId": 0,
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": true
+    }
+  }
+13:15:03.555 detox[14103] [90mi[39m app joined session 377935a7-09af-c61f-06cb-6f16a549a7c5
+13:15:03.556 detox[14103] [90mi[39m send
+  data: {
+    "type": "appConnected"
+  }
+13:15:03.556 detox[14106] [90mi[39m get message
+  data: {"type":"appConnected"}
+   
+13:15:03.561 detox[14103] [90mi[39m get
+  data: {"type":"isReady","params":{},"messageId":-1000}
+13:15:03.561 detox[14106] [90mi[39m send message
+  data: {"type":"isReady","params":{},"messageId":-1000}
+13:15:03.562 detox[14103] [90mi[39m send
+  data: {
+    "type": "isReady",
+    "params": {},
+    "messageId": -1000
+  }
+13:15:05.545 detox[14103] [90mi[39m get
+  data: {"messageId":-1000,"type":"ready","params":{}}
+13:15:05.546 detox[14103] [90mi[39m send
+  data: {
+    "messageId": -1000,
+    "type": "ready",
+    "params": {}
+  }
+13:15:05.546 detox[14106] [90mi[39m get message
+  data: {"messageId":-1000,"type":"ready","params":{}}
+   
+13:15:05.546 detox[14106] [90mB[39m onAppReady
+  args: ({"deviceId":"emulator-17774","bundleId":"com.awesomeproject","pid":3372})
+13:15:05.546 detox[14106] [90mE[39m onAppReady
+13:15:05.546 detox[14106] [90mE[39m launchApp
+13:15:05.547 detox[14106] [90mE[39m beforeAll
+13:15:05.547 detox[14106] [90mB[39m should scroll to the last item
+13:15:05.547 detox[14106] [90mi[39m Example: should scroll to the last item
+13:15:05.549 detox[14106] [90mB[39m onTestStart
+  args: ({"title":"should scroll to the last item","fullName":"Example should scroll to the last item","status":"running","invocations":1})
+13:15:05.549 detox[14106] [90mi[39m stopping ADBLogcatRecording
+13:15:05.549 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "date +\"%m-%d %T.000\""
+13:15:05.656 detox[14106] [90mi[39m 05-28 13:15:05.000
+
+13:15:05.658 detox[14106] [90mi[39m sending SIGINT to: /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell logcat -T "05-28 13:14:58.000" --pid=3372 -f /sdcard/131453762_0.log
+13:15:05.659 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell "logcat -T \"05-28 13:14:58.000\" --pid=3372 -f /sdcard/131453762_0.log" terminated with SIGINT
+13:15:05.660 detox[14106] [90mi[39m starting ADBLogcatRecording
+13:15:05.660 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell "logcat -T \"05-28 13:15:05.000\" --pid=3372 -f /sdcard/131453762_1.log"
+13:15:05.661 detox[14106] [90mE[39m onTestStart
+13:15:05.661 detox[14106] [90mB[39m beforeEach
+13:15:05.661 detox[14106] [90mE[39m beforeEach
+13:15:05.661 detox[14106] [90mB[39m beforeEach
+13:15:05.661 detox[14106] [90mB[39m reloadReactNative
+  args: ()
+13:15:05.662 detox[14103] [90mi[39m get
+  data: {"type":"reactNativeReload","params":{},"messageId":-1000}
+13:15:05.662 detox[14106] [90mi[39m send message
+  data: {"type":"reactNativeReload","params":{},"messageId":-1000}
+13:15:05.663 detox[14103] [90mi[39m send
+  data: {
+    "type": "reactNativeReload",
+    "params": {},
+    "messageId": -1000
+  }
+13:15:05.961 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell du /sdcard/131453762_1.log
+13:15:06.049 detox[14106] [90mi[39m 4	/sdcard/131453762_1.log
+
+13:15:06.138 detox[14103] [90mi[39m get
+  data: {"messageId":-1000,"type":"ready","params":{}}
+13:15:06.138 detox[14103] [90mi[39m send
+  data: {
+    "messageId": -1000,
+    "type": "ready",
+    "params": {}
+  }
+13:15:06.138 detox[14106] [90mi[39m get message
+  data: {"messageId":-1000,"type":"ready","params":{}}
+   
+13:15:06.138 detox[14106] [90mE[39m reloadReactNative
+13:15:06.139 detox[14106] [90mE[39m beforeEach
+13:15:06.139 detox[14106] [90mB[39m test_fn
+13:15:06.141 detox[14106] [90mi[39m send message
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"waitForAssertMatcherWithSearchAction","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["item-13",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":100}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAction"},"method":"scrollInDirectionStaleAtEdge","args":[{"type":"Integer","value":4},{"type":"Double","value":50},{"type":"Double","value":-1},{"type":"Double","value":-1}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["scrollview",{"type":"boolean","value":false}]}}]},"messageId":1}
+13:15:06.143 detox[14106] [90mB[39m wait for expectation while scroll 50 pixels down
+  data: {
+    "target": {
+      "type": "Class",
+      "value": "com.wix.detox.espresso.DetoxAssertion"
+    },
+    "method": "waitForAssertMatcherWithSearchAction",
+    "args": [
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "androidx.test.espresso.Espresso"
+          },
+          "method": "onView",
+          "args": [
+            {
+              "type": "Invocation",
+              "value": {
+                "target": {
+                  "type": "Class",
+                  "value": "com.wix.detox.espresso.DetoxMatcher"
+                },
+                "method": "matcherForTestId",
+                "args": [
+                  "item-13",
+                  {
+                    "type": "boolean",
+                    "value": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForSufficientlyVisible",
+          "args": [
+            {
+              "type": "Integer",
+              "value": 100
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxAction"
+          },
+          "method": "scrollInDirectionStaleAtEdge",
+          "args": [
+            {
+              "type": "Integer",
+              "value": 4
+            },
+            {
+              "type": "Double",
+              "value": 50
+            },
+            {
+              "type": "Double",
+              "value": -1
+            },
+            {
+              "type": "Double",
+              "value": -1
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForTestId",
+          "args": [
+            "scrollview",
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+13:15:06.145 detox[14103] [90mi[39m get
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"waitForAssertMatcherWithSearchAction","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["item-13",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":100}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAction"},"method":"scrollInDirectionStaleAtEdge","args":[{"type":"Integer","value":4},{"type":"Double","value":50},{"type":"Double","value":-1},{"type":"Double","value":-1}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["scrollview",{"type":"boolean","value":false}]}}]},"messageId":1}
+13:15:06.145 detox[14103] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "target": {
+        "type": "Class",
+        "value": "com.wix.detox.espresso.DetoxAssertion"
+      },
+      "method": "waitForAssertMatcherWithSearchAction",
+      "args": [
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "androidx.test.espresso.Espresso"
+            },
+            "method": "onView",
+            "args": [
+              {
+                "type": "Invocation",
+                "value": {
+                  "target": {
+                    "type": "Class",
+                    "value": "com.wix.detox.espresso.DetoxMatcher"
+                  },
+                  "method": "matcherForTestId",
+                  "args": [
+                    "item-13",
+                    {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "com.wix.detox.espresso.DetoxMatcher"
+            },
+            "method": "matcherForSufficientlyVisible",
+            "args": [
+              {
+                "type": "Integer",
+                "value": 100
+              }
+            ]
+          }
+        },
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "com.wix.detox.espresso.DetoxAction"
+            },
+            "method": "scrollInDirectionStaleAtEdge",
+            "args": [
+              {
+                "type": "Integer",
+                "value": 4
+              },
+              {
+                "type": "Double",
+                "value": 50
+              },
+              {
+                "type": "Double",
+                "value": -1
+              },
+              {
+                "type": "Double",
+                "value": -1
+              }
+            ]
+          }
+        },
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "com.wix.detox.espresso.DetoxMatcher"
+            },
+            "method": "matcherForTestId",
+            "args": [
+              "scrollview",
+              {
+                "type": "boolean",
+                "value": false
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "messageId": 1
+  }
+13:15:07.375 detox[14106] [90mi[39m s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+
+13:15:16.140 detox[14103] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":2}
+13:15:16.140 detox[14106] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":2}
+13:15:16.141 detox[14103] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 2
+  }
+13:15:16.147 detox[14103] [90mi[39m get
+  data: {"messageId":2,"type":"currentStatusResult","params":{"status":{"app_status":"idle"}}}
+13:15:16.147 detox[14103] [90mi[39m send
+  data: {
+    "messageId": 2,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "idle"
+      }
+    }
+  }
+13:15:16.147 detox[14106] [90mi[39m get message
+  data: {"messageId":2,"type":"currentStatusResult","params":{"status":{"app_status":"idle"}}}
+   
+13:15:16.149 detox[14106] [90mi[39m The app seems to be idle
+13:15:26.150 detox[14106] [90mi[39m send message
+  data: {"type":"currentStatus","params":{},"messageId":3}
+13:15:26.151 detox[14103] [90mi[39m get
+  data: {"type":"currentStatus","params":{},"messageId":3}
+13:15:26.151 detox[14103] [90mi[39m send
+  data: {
+    "type": "currentStatus",
+    "params": {},
+    "messageId": 3
+  }
+13:15:26.158 detox[14103] [90mi[39m get
+  data: {"messageId":3,"type":"currentStatusResult","params":{"status":{"app_status":"idle"}}}
+13:15:26.158 detox[14103] [90mi[39m send
+  data: {
+    "messageId": 3,
+    "type": "currentStatusResult",
+    "params": {
+      "status": {
+        "app_status": "idle"
+      }
+    }
+  }
+13:15:26.159 detox[14106] [90mi[39m get message
+  data: {"messageId":3,"type":"currentStatusResult","params":{"status":{"app_status":"idle"}}}
+   
+13:15:26.159 detox[14106] [90mi[39m The app seems to be idle
+13:15:26.853 detox[14103] [90mi[39m get
+  data: {"messageId":1,"type":"invokeResult","params":{"result":null}}
+13:15:26.853 detox[14103] [90mi[39m send
+  data: {
+    "messageId": 1,
+    "type": "invokeResult",
+    "params": {
+      "result": null
+    }
+  }
+13:15:26.853 detox[14106] [90mi[39m get message
+  data: {"messageId":1,"type":"invokeResult","params":{"result":null}}
+   
+13:15:26.853 detox[14106] [90mE[39m wait for expectation while scroll 50 pixels down
+13:15:26.853 detox[14106] [90mE[39m test_fn
+13:15:26.854 detox[14106] [90mB[39m onTestDone
+  args: ({"title":"should scroll to the last item","fullName":"Example should scroll to the last item","status":"passed","invocations":1})
+13:15:26.854 detox[14106] [90mi[39m stopping ADBLogcatRecording
+13:15:26.854 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "date +\"%m-%d %T.000\""
+13:15:26.949 detox[14106] [90mi[39m 05-28 13:15:26.000
+
+13:15:26.950 detox[14106] [90mi[39m sending SIGINT to: /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell logcat -T "05-28 13:15:05.000" --pid=3372 -f /sdcard/131453762_1.log
+13:15:26.951 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell "logcat -T \"05-28 13:15:05.000\" --pid=3372 -f /sdcard/131453762_1.log" terminated with SIGINT
+13:15:26.953 detox[14106] [90mE[39m onTestDone
+13:15:26.953 detox[14106] [90mE[39m should scroll to the last item
+13:15:26.953 detox[14106] [90mi[39m Example: should scroll to the last item [OK]
+13:15:26.954 detox[14106] [90mB[39m onRunDescribeFinish
+  args: ({"name":"Example"})
+13:15:26.954 detox[14106] [90mE[39m onRunDescribeFinish
+13:15:26.954 detox[14106] [90mE[39m Example
+13:15:26.955 detox[14106] [90mB[39m onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+13:15:26.955 detox[14106] [90mE[39m onRunDescribeFinish
+13:15:26.955 detox[14106] [90mE[39m run the tests
+13:15:26.956 detox[14106] [90mB[39m tear down environment
+13:15:26.957 detox[14106] [90mB[39m onBeforeCleanup
+  args: ()
+13:15:26.958 detox[14106] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2024-05-28 11-14-50Z/✓ Example should scroll to the last item/device.log
+13:15:26.958 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 pull "/sdcard/131453762_1.log" "artifacts/android.emu.debug.2024-05-28 11-14-50Z/✓ Example should scroll to the last item/device.log"
+13:15:26.990 detox[14106] [90mi[39m /sdcard/131453762_1.log: 1 file pulled, 0 skipped. 8.7 MB/s (36864 bytes in 0.004s)
+
+13:15:26.990 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "rm  \"/sdcard/131453762_1.log\""
+13:15:27.095 detox[14106] [90mi[39m 
+13:15:27.095 detox[14106] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2024-05-28 11-14-50Z/emulator-17774 2024-05-28 11-15-27Z.startup.log
+13:15:27.095 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 pull "/sdcard/131453762_0.log" "artifacts/android.emu.debug.2024-05-28 11-14-50Z/emulator-17774 2024-05-28 11-15-27Z.startup.log"
+13:15:27.143 detox[14106] [90mi[39m /sdcard/131453762_0.log: 1 file pulled, 0 skipped. 5.6 MB/s (40960 bytes in 0.007s)
+
+13:15:27.143 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 shell "rm  \"/sdcard/131453762_0.log\""
+13:15:27.325 detox[14106] [90mi[39m 
+13:15:27.326 detox[14106] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2024-05-28 11-14-50Z/detox_pid_14106.json.log { append: true }
+13:15:27.326 detox[14106] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2024-05-28 11-14-50Z/detox_pid_14106.log { append: true }
+13:15:27.326 detox[14106] [90mE[39m onBeforeCleanup
+13:15:27.328 detox[14103] [90mi[39m get
+  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
+13:15:27.328 detox[14103] [90mi[39m send
+  data: {
+    "type": "cleanup",
+    "params": {
+      "stopRunner": true
+    },
+    "messageId": -49642
+  }
+13:15:27.328 detox[14106] [90mi[39m send message
+  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
+13:15:27.335 detox[14103] [90mi[39m get
+  data: {"messageId":-49642,"type":"cleanupDone","params":{}}
+13:15:27.335 detox[14103] [90mi[39m send
+  data: {
+    "messageId": -49642,
+    "type": "cleanupDone",
+    "params": {}
+  }
+13:15:27.335 detox[14106] [90mi[39m get message
+  data: {"messageId":-49642,"type":"cleanupDone","params":{}}
+   
+13:15:27.338 detox[14103] [90mi[39m tester exited session 377935a7-09af-c61f-06cb-6f16a549a7c5
+13:15:27.338 detox[14103] [90mi[39m send
+  data: {
+    "type": "testerDisconnected",
+    "messageId": -1
+  }
+13:15:27.338 detox[14103] [90mE[39m connection :60607<->:60609
+13:15:27.339 detox[14106] [90mi[39m sending SIGINT to: /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell am instrument -w -r -e detoxServer ws://localhost:60607 -e detoxSessionId 377935a7-09af-c61f-06cb-6f16a549a7c5 -e debug false com.awesomeproject.test/androidx.test.runner.AndroidJUnitRunner
+13:15:27.342 detox[14106] [90mi[39m /Users/llienard/Library/Android/sdk/platform-tools/adb -s emulator-17774 shell am instrument -w -r -e detoxServer ws://localhost:60607 -e detoxSessionId 377935a7-09af-c61f-06cb-6f16a549a7c5 -e debug false com.awesomeproject.test/androidx.test.runner.AndroidJUnitRunner terminated with SIGINT
+13:15:27.342 detox[14106] [90mi[39m "/Users/llienard/Library/Android/sdk/platform-tools/adb" -s emulator-17774 reverse --remove tcp:60607
+13:15:27.343 detox[14106] [90mi[39m dispatching event to  primary-14103 /tmp/detox.primary-14103  :  deallocateDevice , {
+  deviceCookie: {
+    id: 'emulator-17774',
+    adbName: 'emulator-17774',
+    name: 'emulator-17774 (Pixel_4_XL_API_34)'
+  }
+}
+13:15:27.344 detox[14103] [90mi[39m received event of :  deallocateDevice {
+  deviceCookie: {
+    id: 'emulator-17774',
+    adbName: 'emulator-17774',
+    name: 'emulator-17774 (Pixel_4_XL_API_34)'
+  }
+}
+13:15:27.344 detox[14103] [90mB[39m free: emulator-17774
+  data: {}
+13:15:27.362 detox[14103] [90mE[39m free: emulator-17774
+13:15:27.362 detox[14103] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
+13:15:27.363 detox[14106] [90mi[39m ## received events ##
+13:15:27.363 detox[14106] [90mi[39m detected event deallocateDeviceDone {}
+13:15:27.363 detox[14106] [90mE[39m tear down environment
+13:15:27.363 detox[14106] [90mE[39m e2e/starter.test.js
+13:15:27.370 detox[14106] [90mi[39m dispatching event to  primary-14103 /tmp/detox.primary-14103  :  reportTestResults , {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/e2e/starter.test.js',
+      testExecError: undefined,
+      isPermanentFailure: false
+    }
+  ]
+}
+13:15:27.371 detox[14103] [90mi[39m received event of :  reportTestResults {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+13:15:27.371 detox[14103] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+13:15:27.372 detox[14103] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-14103  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+13:15:27.372 detox[14106] [90mi[39m ## received events ##
+13:15:27.372 detox[14106] [90mi[39m detected event reportTestResultsDone {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/llienard/WebstormProjects/exampleSectionList/AwesomeProject/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+13:15:27.376 detox[14103] [90mi[39m socket disconnected secondary-14106
+13:15:27.376 detox[14106] [90mi[39m connection closed primary-14103 /tmp/detox.primary-14103 0 tries remaining of 0
+13:15:27.376 detox[14106] [90mi[39m secondary-14106 exceeded connection rety amount of  or stopRetrying flag set.
+13:15:27.405 detox[14106] [90mi[39m 
+13:15:27.479 detox[14103] [90mE[39m jest --config e2e/jest.config.js
+13:15:27.480 detox[14103] [90mB[39m cleanup
+  args: ()
+13:15:27.482 detox[14103] [90mE[39m cleanup
+13:15:27.482 detox[14103] [90mi[39m Detox server has been closed gracefully
+13:15:27.483 detox[14103] [90mi[39m app exited session 377935a7-09af-c61f-06cb-6f16a549a7c5
+13:15:27.483 detox[14103] [90mE[39m connection :60607<->:60702
+13:15:27.484 detox[14103] [90mE[39m node_modules/.bin/detox test --configuration android.emu.debug --record-logs all

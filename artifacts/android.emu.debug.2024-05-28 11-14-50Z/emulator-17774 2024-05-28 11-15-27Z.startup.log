@@ -1,0 +1,283 @@
+--------- beginning of main
+05-28 13:14:59.703  3372  3372 I .awesomeproject: Late-enabling -Xcheck:jni
+05-28 13:14:59.739  3372  3372 I .awesomeproject: Using CollectorTypeCC GC.
+05-28 13:14:59.741  3372  3372 W .awesomeproject: Unexpected CPU variant for x86: x86_64.
+05-28 13:14:59.741  3372  3372 W .awesomeproject: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+05-28 13:14:59.806  3372  3372 I ActivityThread: Relaunch all activities: onCoreSettingsChange
+05-28 13:14:59.807  3372  3372 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10438; state: ENABLED
+05-28 13:14:59.808  3372  3372 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10438; state: ENABLED
+--------- beginning of system
+05-28 13:14:59.818  3372  3372 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.awesomeproject]: x86_64, null instrumentation[com.awesomeproject.test]: null, null
+05-28 13:14:59.823  3372  3372 W .awesomeproject: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[])
+05-28 13:14:59.826  3372  3372 W .awesomeproject: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*4168958247])
+05-28 13:14:59.830  3372  3372 W .awesomeproject: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*4168958247:/system/framework/android.test.mock.jar*3186112116])
+05-28 13:14:59.831  3372  3372 W ziparchive: Unable to open '/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.dm': No such file or directory
+05-28 13:14:59.831  3372  3372 W ziparchive: Unable to open '/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.dm': No such file or directory
+05-28 13:14:59.954  3372  3372 W ziparchive: Unable to open '/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.dm': No such file or directory
+05-28 13:14:59.954  3372  3372 W ziparchive: Unable to open '/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.dm': No such file or directory
+05-28 13:15:00.101  3372  3372 D nativeloader: Configuring clns-6 for other apk /system/framework/android.test.runner.jar:/system/framework/android.test.mock.jar:/system/framework/android.test.base.jar:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/lib/x86_64:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/lib/x86_64:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!/lib/x86_64:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.awesomeproject
+05-28 13:15:00.128  3372  3372 V GraphicsEnvironment: Currently set values for:
+05-28 13:15:00.128  3372  3372 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+05-28 13:15:00.129  3372  3372 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+05-28 13:15:00.129  3372  3372 V GraphicsEnvironment: ANGLE GameManagerService for com.awesomeproject: false
+05-28 13:15:00.129  3372  3372 V GraphicsEnvironment: com.awesomeproject is not listed in per-application setting
+05-28 13:15:00.130  3372  3372 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+05-28 13:15:00.134  3372  3372 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-28 13:15:00.138  3372  3372 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/lib/x86_64:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/lib/x86_64, permitted_path=/data:/mnt/expand
+05-28 13:15:00.143  3372  3372 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-28 13:15:00.158  3372  3372 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/lib/x86_64:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/lib/x86_64, permitted_path=/data:/mnt/expand
+05-28 13:15:00.175  3372  3372 W .awesomeproject: ClassLoaderContext shared library size mismatch. Expected=2, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]} | PCL[]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]#PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}};PCL[/system/framework/android.test.runner.jar*4168958247:/system/framework/android.test.mock.jar*3186112116:/system/framework/android.test.base.jar*836642756:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk*1660159515:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes2.dex*291515500:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes3.dex*179979219:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes4.dex*590372607:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk*1078837764:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes2.dex*2730207553:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes3.dex*2997743834:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes4.dex*2148244413])
+05-28 13:15:00.196  3372  3372 W .awesomeproject: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]#PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}};PCL[/system/framework/android.test.runner.jar*4168958247:/system/framework/android.test.mock.jar*3186112116:/system/framework/android.test.base.jar*836642756:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk*1660159515:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes2.dex*291515500:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes3.dex*179979219:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes4.dex*590372607:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk*1078837764:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes2.dex*2730207553:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes3.dex*2997743834:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes4.dex*2148244413])
+05-28 13:15:00.207  3372  3372 W .awesomeproject: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*4168958247:/system/framework/android.test.mock.jar*3186112116]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]#PCL[/system/framework/android.test.runner.jar*4168958247]{PCL[/system/framework/android.test.base.jar*836642756]#PCL[/system/framework/android.test.mock.jar*3186112116]}};PCL[/system/framework/android.test.runner.jar*4168958247:/system/framework/android.test.mock.jar*3186112116:/system/framework/android.test.base.jar*836642756:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk*1660159515:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes2.dex*291515500:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes3.dex*179979219:/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!classes4.dex*590372607:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk*1078837764:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes2.dex*2730207553:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes3.dex*2997743834:/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!classes4.dex*2148244413])
+05-28 13:15:00.210  3372  3372 W ziparchive: Unable to open '/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.dm': No such file or directory
+05-28 13:15:00.210  3372  3372 W ziparchive: Unable to open '/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.dm': No such file or directory
+05-28 13:15:00.363  3372  3372 W ziparchive: Unable to open '/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.dm': No such file or directory
+05-28 13:15:00.363  3372  3372 W ziparchive: Unable to open '/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.dm': No such file or directory
+05-28 13:15:00.552  3372  3372 I MonitoringInstr: newApplication called!
+05-28 13:15:00.573  3372  3372 I MonitoringInstr: Instrumentation started!
+05-28 13:15:00.603  3372  3372 I AndroidJUnitRunner: onCreate Bundle[{debug=false, detoxServer=ws://localhost:60607, detoxSessionId=377935a7-09af-c61f-06cb-6f16a549a7c5}]
+05-28 13:15:00.606  3372  3372 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+05-28 13:15:00.609  3372  3393 D AndroidJUnitRunner: onStart is called.
+05-28 13:15:00.611  3372  3372 V SoLoader: Init System Loader delegate
+05-28 13:15:00.621  3372  3393 I InstrConnection: Could not send broadcast or register receiver (isolatedProcess?)
+05-28 13:15:00.628  3372  3393 D TestRequestBuilder: Using class path scanning to discover tests
+05-28 13:15:00.629  3372  3393 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk]
+05-28 13:15:00.631  3372  3393 W .awesomeproject: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: Could not load class: com.google.android.material.shadow.ShadowDrawableWrapper
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: java.lang.ClassNotFoundException: com.google.android.material.shadow.ShadowDrawableWrapper
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.Class.classForName(Native Method)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.Class.forName(Class.java:536)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at androidx.test.internal.runner.ScanningTestLoader.doCreateRunner(ScanningTestLoader.java:45)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at androidx.test.internal.runner.TestLoader.getRunnersFor(TestLoader.java:64)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at androidx.test.internal.runner.TestRequestBuilder.build(TestRequestBuilder.java:835)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at androidx.test.runner.AndroidJUnitRunner.buildRequest(AndroidJUnitRunner.java:650)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:418)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: Caused by: java.lang.ClassNotFoundException: com.google.android.material.shadow.ShadowDrawableWrapper
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.VMClassLoader.findLoadedClass(Native Method)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.ClassLoader.findLoadedClass(ClassLoader.java:738)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:363)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	... 8 more
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: Caused by: java.lang.NoClassDefFoundError: Failed resolution of: Landroidx/appcompat/graphics/drawable/DrawableWrapper;
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	... 8 more
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: Caused by: java.lang.ClassNotFoundException: Didn't find class "androidx.appcompat.graphics.drawable.DrawableWrapper" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk", zip file "/data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk"],nativeLibraryDirectories=[/data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/lib/x86_64, /data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/lib/x86_64, /data/app/~~bkQBOCebWmrbcW_dAv5b_w==/com.awesomeproject.test-ygFIp_IGbg5K6OfIYbJ9tA==/base.apk!/lib/x86_64, /data/app/~~omyou6B_6zAPRzfEZuPRQw==/com.awesomeproject-LxcndwIpjBg2ngkkrkZUbg==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-28 13:15:02.302  3372  3393 W ScanningTestLoader: 	... 8 more
+05-28 13:15:02.951  3372  3393 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+05-28 13:15:02.954  3372  3393 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+05-28 13:15:02.954  3372  3393 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+05-28 13:15:02.955  3372  3393 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+05-28 13:15:02.955  3372  3393 D TestExecutor: Adding listener androidx.test.internal.runner.listener.TraceRunListener
+05-28 13:15:02.957  3372  3393 I TestRunner: run started: 1 tests
+05-28 13:15:02.958  3372  3393 I TestRunner: started: runDetoxTests(com.awesomeproject.DetoxTest)
+05-28 13:15:02.965  3372  3393 I Detox   : Detox server connection details: url=ws://localhost:60607, sessionId=377935a7-09af-c61f-06cb-6f16a549a7c5
+05-28 13:15:02.970  3372  3393 W FileTestStorage: Output properties is not supported.
+05-28 13:15:02.971  3372  3393 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+05-28 13:15:02.978  3372  3393 D EventInjectionStrategy: Creating injection strategy with input manager.
+05-28 13:15:02.979  3372  3393 W .awesomeproject: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+05-28 13:15:02.980  3372  3393 W .awesomeproject: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+05-28 13:15:02.980  3372  3393 W .awesomeproject: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+05-28 13:15:02.988  3372  3393 W .awesomeproject: Accessing hidden field Ljava/lang/reflect/Field;->accessFlags:I (unsupported, reflection, allowed)
+05-28 13:15:02.991  3372  3393 I Detox   : Connecting to server...
+05-28 13:15:02.991  3372  3393 I DetoxWSClient: At connectToServer
+05-28 13:15:03.054  3372  3410 D TrafficStats: tagSocket(78) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:03.065  3372  3410 D DetoxWSClient: At onOpen
+05-28 13:15:03.065  3372  3410 I DetoxWSClient: Sending out action 'login' (ID #0)
+05-28 13:15:03.066  3372  3410 I Detox   : Connected to server!
+05-28 13:15:03.069  3372  3410 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+05-28 13:15:03.070  3372  3406 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+05-28 13:15:03.070  3372  3406 I DetoxDispatcher: Done with action 'loginSuccess'
+05-28 13:15:03.070  3372  3393 I Detox   : Launching the tested activity!
+05-28 13:15:03.116  3372  3410 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+05-28 13:15:03.120  3372  3406 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+05-28 13:15:03.140  3372  3372 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+05-28 13:15:03.148  3372  3420 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+05-28 13:15:03.159  3372  3420 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+05-28 13:15:03.162  3372  3372 D LifecycleMonitor: Lifecycle status change: com.awesomeproject.MainActivity@13f938d in: PRE_ON_CREATE
+05-28 13:15:03.175  3372  3420 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+05-28 13:15:03.183  3372  3372 E .awesomeproject: Invalid resource ID 0x00000000.
+05-28 13:15:03.187  3372  3372 D Detox.RNMarker: BUILD_REACT_INSTANCE_MANAGER_START (null)
+05-28 13:15:03.259  3372  3372 D Detox.RNMarker: BUILD_REACT_INSTANCE_MANAGER_END (null)
+05-28 13:15:03.291  3372  3426 D TrafficStats: tagSocket(85) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:03.296  3372  3427 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:03.304  3372  3428 D TrafficStats: tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:03.316  3372  3372 W .awesomeproject: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+05-28 13:15:03.316  3372  3372 W .awesomeproject: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+05-28 13:15:03.322  3372  3372 D LifecycleMonitor: Lifecycle status change: com.awesomeproject.MainActivity@13f938d in: CREATED
+05-28 13:15:03.324  3372  3372 D LifecycleMonitor: Lifecycle status change: com.awesomeproject.MainActivity@13f938d in: STARTED
+05-28 13:15:03.327  3372  3372 D LifecycleMonitor: Lifecycle status change: com.awesomeproject.MainActivity@13f938d in: RESUMED
+05-28 13:15:03.332  3372  3372 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10438; state: DISABLED
+05-28 13:15:03.333  3372  3372 W OpenGLRenderer: Unknown dataspace 0
+05-28 13:15:03.340  3372  3372 D Detox.RNMarker: DOWNLOAD_START (null)
+05-28 13:15:03.348  3372  3372 W unknown:ReactNative: Packager connection already open, nooping.
+05-28 13:15:03.414  3372  3417 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+05-28 13:15:03.415  3372  3417 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+05-28 13:15:03.436  3372  3417 I Gralloc4: mapper 4.x is not supported
+05-28 13:15:03.476  3372  3417 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-28 13:15:03.504  3372  3372 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10438; state: ENABLED
+05-28 13:15:03.534  3372  3417 E OpenGLRenderer: Unable to match the desired swap behavior.
+05-28 13:15:03.646  3372  3426 D Detox.RNMarker: DOWNLOAD_END ({"url":"http:\/\/localhost:8081\/index.bundle?platform=android&dev=true&lazy=true&minify=false&app=com.awesomeproject&modulesOnly=false&runModule=true","filesChangedCount":0})
+05-28 13:15:03.646  3372  3372 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@6a444ac
+05-28 13:15:03.651  3372  3372 D Detox.RNMarker: REACT_BRIDGE_LOADING_START (null)
+05-28 13:15:03.655  3372  3435 D Detox.RNMarker: CREATE_REACT_CONTEXT_START (HermesExecutorDebug)
+05-28 13:15:03.656  3372  3435 D Detox.RNMarker: PROCESS_PACKAGES_START (null)
+05-28 13:15:03.659  3372  3435 D Detox.RNMarker: CREATE_MODULE_START (JSCHeapCapture)
+05-28 13:15:03.660  3372  3435 D Detox.RNMarker: CREATE_MODULE_END (JSCHeapCapture)
+05-28 13:15:03.663  3372  3435 D Detox.RNMarker: CREATE_MODULE_START (FrescoModule)
+05-28 13:15:03.665  3372  3435 D Detox.RNMarker: CREATE_MODULE_END (FrescoModule)
+05-28 13:15:03.666  3372  3435 D Detox.RNMarker: PROCESS_PACKAGES_END (null)
+05-28 13:15:03.666  3372  3435 D Detox.RNMarker: CREATE_CATALYST_INSTANCE_START (null)
+05-28 13:15:03.680  3372  3435 D Detox.RNMarker: CREATE_CATALYST_INSTANCE_END (null)
+05-28 13:15:03.681  3372  3437 D Detox.RNMarker: CREATE_REACT_CONTEXT_END (null)
+05-28 13:15:03.681  3372  3435 D Detox.RNMarker: PRE_RUN_JS_BUNDLE_START (null)
+05-28 13:15:03.683  3372  3437 D Detox.RNMarker: RUN_JS_BUNDLE_START (/index.bundle?platform=android&dev=true&lazy=true&minify=false&app=com.awesomeproject&modulesOnly=false&runModule=true)
+05-28 13:15:03.687  3372  3438 D Detox.RNMarker: CREATE_MODULE_START (UIManager)
+05-28 13:15:03.687  3372  3372 W unknown:ReactNative: Packager connection already open, nooping.
+05-28 13:15:03.704  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.debuggingoverlay.DebuggingOverlayManager
+05-28 13:15:03.712  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+05-28 13:15:03.717  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+05-28 13:15:03.720  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+05-28 13:15:03.724  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+05-28 13:15:03.726  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+05-28 13:15:03.728  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+05-28 13:15:03.730  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+05-28 13:15:03.734  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+05-28 13:15:03.737  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+05-28 13:15:03.738  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+05-28 13:15:03.741  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+05-28 13:15:03.742  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+05-28 13:15:03.744  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+05-28 13:15:03.747  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+05-28 13:15:03.750  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+05-28 13:15:03.751  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+05-28 13:15:03.752  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+05-28 13:15:03.753  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+05-28 13:15:03.759  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+05-28 13:15:03.763  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+05-28 13:15:03.766  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+05-28 13:15:03.768  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+05-28 13:15:03.772  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+05-28 13:15:03.773  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+05-28 13:15:03.775  3372  3438 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+05-28 13:15:03.781  3372  3438 D Detox.RNMarker: CREATE_MODULE_END (UIManager)
+05-28 13:15:03.791  3372  3438 D Detox.RNMarker: REACT_BRIDGE_LOADING_END (null)
+05-28 13:15:03.791  3372  3372 D DetoxRNLoading: Listener-proxy method called: onReactContextInitialized
+05-28 13:15:03.792  3372  3372 I DetoxRNLoading: Got new RN-context async'ly through listener
+05-28 13:15:03.793  3372  3372 D DetoxRNLoading: Listener-proxy method called: equals
+05-28 13:15:03.794  3372  3393 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+05-28 13:15:03.794  3372  3393 D IdlingRegistry: Unregistering idling resources: [null, null, null, null]
+05-28 13:15:03.797  3372  3372 D Detox.RNMarker: CREATE_MODULE_START (Timing)
+05-28 13:15:03.798  3372  3372 D Detox.RNMarker: CREATE_MODULE_END (Timing)
+05-28 13:15:03.799  3372  3393 D IdlingRegistry: Registering idling resources: [com.wix.detox.reactnative.idlingresources.timers.TimersIdlingResource@6910670, com.wix.detox.reactnative.idlingresources.BridgeIdlingResource@6560de9, com.wix.detox.reactnative.idlingresources.uimodule.UIModuleIdlingResource@6171a6e, com.wix.detox.reactnative.idlingresources.AnimatedModuleIdlingResource@f7f50f]
+05-28 13:15:03.800  3372  3393 D Detox.RNMarker: CREATE_MODULE_START (Networking)
+05-28 13:15:03.806  3372  3393 D Detox.RNMarker: CREATE_MODULE_END (Networking)
+05-28 13:15:03.806  3372  3393 D IdlingRegistry: Registering idling resources: [com.wix.detox.reactnative.idlingresources.NetworkIdlingResource@ed8199c]
+05-28 13:15:03.807  3372  3393 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+05-28 13:15:03.808  3372  3393 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+05-28 13:15:03.808  3372  3393 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+05-28 13:15:03.809  3372  3393 D DetoxRNHelpers: Native RN module resolution (class com.facebook.react.modules.storage.AsyncStorageModule): no such class
+05-28 13:15:03.812  3372  3372 D Detox.RNMarker: CREATE_MODULE_START (NativeAnimatedModule)
+05-28 13:15:03.812  3372  3372 D Detox.RNMarker: CREATE_MODULE_END (NativeAnimatedModule)
+05-28 13:15:03.814  3372  3406 W .awesomeproject: Long monitor contention with owner Instr: androidx.test.runner.AndroidJUnitRunner (3393) at void com.wix.detox.DetoxMain.launchActivityOnCue(android.content.Context, com.wix.detox.ActivityLaunchHelper)(DetoxMain.kt:54) waiters=0 in void com.wix.detox.DetoxMain$setupActionHandlers$SynchronizedActionHandler.handle(java.lang.String, long) for 693ms
+05-28 13:15:03.818  3372  3372 W .awesomeproject: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+05-28 13:15:03.819  3372  3372 W .awesomeproject: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+05-28 13:15:03.819  3372  3372 W .awesomeproject: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+05-28 13:15:03.861  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (NativePerformanceCxx)
+05-28 13:15:03.865  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (NativePerformanceObserverCxx)
+05-28 13:15:03.871  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (PlatformConstants)
+05-28 13:15:03.871  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (PlatformConstants)
+05-28 13:15:03.872  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (PlatformConstants)
+05-28 13:15:03.881  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (PlatformConstants)
+05-28 13:15:03.884  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (LogBox)
+05-28 13:15:03.885  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (LogBox)
+05-28 13:15:03.886  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (LogBox)
+05-28 13:15:03.886  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (LogBox)
+05-28 13:15:03.954  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (Timing)
+05-28 13:15:03.955  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (Timing)
+05-28 13:15:03.979  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (AppState)
+05-28 13:15:03.980  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (AppState)
+05-28 13:15:03.980  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (AppState)
+05-28 13:15:03.982  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (AppState)
+05-28 13:15:03.987  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (SourceCode)
+05-28 13:15:03.987  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (SourceCode)
+05-28 13:15:03.987  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (SourceCode)
+05-28 13:15:03.988  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (SourceCode)
+05-28 13:15:03.991  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (BlobModule)
+05-28 13:15:03.992  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (BlobModule)
+05-28 13:15:03.995  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (BlobModule)
+05-28 13:15:03.997  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (BlobModule)
+05-28 13:15:03.999  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (WebSocketModule)
+05-28 13:15:03.999  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (WebSocketModule)
+05-28 13:15:04.000  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (WebSocketModule)
+05-28 13:15:04.002  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (WebSocketModule)
+05-28 13:15:04.011  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (DevSettings)
+05-28 13:15:04.011  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (DevSettings)
+05-28 13:15:04.012  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (DevSettings)
+05-28 13:15:04.014  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (DevSettings)
+05-28 13:15:04.016  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (DevToolsSettingsManager)
+05-28 13:15:04.016  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (DevToolsSettingsManager)
+05-28 13:15:04.016  3372  3438 I WebViewFactory: Loading com.android.webview version 113.0.5672.136 (code 567263606)
+05-28 13:15:04.017  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (DevToolsSettingsManager)
+05-28 13:15:04.019  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (DevToolsSettingsManager)
+05-28 13:15:04.025  3372  3438 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+05-28 13:15:04.025  3372  3438 D nativeloader: Configuring product-clns-9 for unbundled product apk /product/app/webview/webview.apk. target_sdk_version=34, uses_libraries=, library_path=/product/app/webview/lib/x86_64:/product/app/webview/webview.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/product/lib64:/system/product/lib64
+05-28 13:15:04.028  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (RedBox)
+05-28 13:15:04.031  3372  3438 D nativeloader: InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+05-28 13:15:04.042  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (Networking)
+05-28 13:15:04.044  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (Networking)
+05-28 13:15:04.047  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (Appearance)
+05-28 13:15:04.047  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (Appearance)
+05-28 13:15:04.047  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (Appearance)
+05-28 13:15:04.048  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (Appearance)
+05-28 13:15:04.050  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (DevLoadingView)
+05-28 13:15:04.050  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (DevLoadingView)
+05-28 13:15:04.050  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (DevLoadingView)
+05-28 13:15:04.051  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (DevLoadingView)
+05-28 13:15:04.054  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (BugReporting)
+05-28 13:15:04.058  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (HeadlessJsTaskSupport)
+05-28 13:15:04.059  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (HeadlessJsTaskSupport)
+05-28 13:15:04.059  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (HeadlessJsTaskSupport)
+05-28 13:15:04.060  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (HeadlessJsTaskSupport)
+05-28 13:15:04.068  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (UIManager)
+05-28 13:15:04.077  3372  3438 W .awesomeproject: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (unsupported, reflection, allowed)
+05-28 13:15:04.077  3372  3438 W .awesomeproject: Accessing hidden method Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V (unsupported, reflection, allowed)
+05-28 13:15:04.078  3372  3438 W .awesomeproject: Accessing hidden method Landroid/os/Trace;->traceEnd(J)V (unsupported, reflection, allowed)
+05-28 13:15:04.078  3372  3438 W .awesomeproject: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+05-28 13:15:04.078  3372  3438 W .awesomeproject: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+05-28 13:15:04.082  3372  3438 I cr_WVCFactoryProvider: Loaded version=113.0.5672.136 minSdkVersion=1 isBundle=false multiprocess=true packageId=2
+05-28 13:15:04.095  3372  3448 I cr_VariationsUtils: Failed reading seed file "/data/user/0/com.awesomeproject/app_webview/variations_seed_new"
+05-28 13:15:04.095  3372  3448 I cr_VariationsUtils: Failed reading seed file "/data/user/0/com.awesomeproject/app_webview/variations_seed"
+05-28 13:15:04.096  3372  3448 I cr_VariationsUtils: Requesting new seed from IVariationsSeedServer
+05-28 13:15:04.106  3372  3438 I cr_LibraryLoader: Successfully loaded native library
+05-28 13:15:04.107  3372  3438 I cr_CachingUmaRecorder: Flushed 8 samples from 8 histograms.
+05-28 13:15:04.140  3372  3451 D TrafficStats: tagSocket(122) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:04.377  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (UIManager)
+05-28 13:15:04.386  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (DeviceInfo)
+05-28 13:15:04.387  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (DeviceInfo)
+05-28 13:15:04.387  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (DeviceInfo)
+05-28 13:15:04.390  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (DeviceInfo)
+05-28 13:15:04.416  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (ImageLoader)
+05-28 13:15:04.416  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (ImageLoader)
+05-28 13:15:04.417  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (ImageLoader)
+05-28 13:15:04.418  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (ImageLoader)
+05-28 13:15:04.427  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (SoundManager)
+05-28 13:15:04.427  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (SoundManager)
+05-28 13:15:04.428  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (SoundManager)
+05-28 13:15:04.428  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (SoundManager)
+05-28 13:15:04.436  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (IntentAndroid)
+05-28 13:15:04.437  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (IntentAndroid)
+05-28 13:15:04.438  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (IntentAndroid)
+05-28 13:15:04.439  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (IntentAndroid)
+05-28 13:15:04.440  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (LinkingManager)
+05-28 13:15:04.448  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (DeviceEventManager)
+05-28 13:15:04.448  3372  3437 D Detox.RNMarker: CREATE_MODULE_START (DeviceEventManager)
+05-28 13:15:04.449  3372  3437 D Detox.RNMarker: CREATE_MODULE_END (DeviceEventManager)
+05-28 13:15:04.450  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (DeviceEventManager)
+05-28 13:15:04.457  3372  3437 D Detox.RNMarker: RUN_JS_BUNDLE_END (/index.bundle?platform=android&dev=true&lazy=true&minify=false&app=com.awesomeproject&modulesOnly=false&runModule=true)
+05-28 13:15:04.464  3372  3437 I ReactNativeJS: Running "AwesomeProject" with {"rootTag":11}
+05-28 13:15:04.470  3372  3458 D TrafficStats: tagSocket(119) with statsTag=0xffffffff, statsUid=-1
+05-28 13:15:04.716  3372  3437 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (NativeReactNativeFeatureFlagsCxx)
+05-28 13:15:04.718  3372  3
